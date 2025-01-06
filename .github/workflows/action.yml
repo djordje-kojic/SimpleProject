@@ -1,5 +1,5 @@
 name: 'Simple project'
-permission:
+permissions:
   actions: write
   contents: read
 
