@@ -2,9 +2,12 @@ name: "Simple project"
 
 on: push
 jobs:
-    first_jobe:
+    build-node:
         runs-on: ubuntu-latest
         container: node:23.5.0
         steps:
             - run: node --version
             - run: npm --version
+            - uses: actions/checkout@v4
+            - run: npm isntall
+            - run: node app.js
