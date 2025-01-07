@@ -4,6 +4,7 @@ on: push
 jobs:
     first_jobe:
         runs-on: ubuntu-latest
+        container: node:23.5.0
         steps:
             - run: node --version
             - run: npm --version
