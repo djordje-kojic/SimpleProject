@@ -3,7 +3,7 @@ name: "Simple project"
 on: push
 jobs:
     first_jobe:
-        runs-on: ununtu-latest
+        runs-on: ubuntu-latest
         steps:
             - run: node --version
             - run: npm --version
