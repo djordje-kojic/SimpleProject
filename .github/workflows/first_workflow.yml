@@ -3,11 +3,16 @@ name: "Simple project"
 on: push
 jobs:
     build-node:
+        name: Build and run Node project
         runs-on: ubuntu-latest
         container: node:23.5.0
         steps:
             - run: node --version
+              name: Check Node Version
             - run: npm --version
+              name: Check npm version
             - uses: actions/checkout@v4
+              name: Check code from GitHub
             - run: npm install
+              name: Install npm packages
             - run: node app.js
